@@ -553,12 +553,12 @@ $('.theme-btn').on('mouseenter', function (e) {
       
       newsletterPopup();
      
-      $(document).ready(function(){
-        $(".counter").counterUp({
-          delay:7,
-          time:1200
-        })
-      })
+      // $(document).ready(function(){
+      //   $(".counter").counterUp({
+      //     delay:7,
+      //     time:1200
+      //   })
+      // })
 
 })(jQuery);
 
@@ -586,6 +586,28 @@ function reveal() {
 
 }
 
+// card animation
+window.onload = function(){ 
+
+  document.getElementById("card_wraper").onmousemove = e => {
+    for(const card of document.getElementsByClassName("card_body")) {
+      const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+  
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    };
+  }
+
+  VanillaTilt.init(document.querySelectorAll(".card_body"), {
+		max: 15,
+		speed: 15,
+    glare:true,
+    "max-glare": 1
+	});
+
+};
 
 
 
