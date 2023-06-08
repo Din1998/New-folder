@@ -15,19 +15,20 @@
         height: 100%;
         background-color: hsl(var(--base)/.2);
         z-index:999;
+        
     }
 
-        .overlay{
-        position: relative;
-        background-color: hsl(var(--base)/.2);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+    .overlay{
+    position: relative;
+    background-color: hsl(var(--base)/.2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
 
-        width: 100%;
-        z-index: 999;
-      }
+    }
   }
 
   .service-section{

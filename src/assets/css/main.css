@@ -3942,20 +3942,72 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .header-area {
-    background-color: hsl(var(--base)/0.1);
+    background-color: rgb(226, 226, 226);
     left: 0;
     right: 0;
     z-index: 1;
 }
 
+.header-area .header-area:hover::before {
+    opacity: 1;
+}
+
+.header-area .header-area:hover::before {
+    opacity: 1;
+}
+
+.header-area .header-area::before,
+.header-area .header-area::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+.header-area .header-area::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 0.06), transparent 90%);
+    z-index: 3;
+}
+
+.header-area .header-area::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 0.4), transparent 90%);
+    z-index: 1;
+}
+
 .header-area .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 34px 0px 34px 0px;
 }
 
-.header-area .main-nav .nav {
-    gap: 24px;
+.header-area .main-nav .logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-area .main-nav .ham__menu {
+    display: none;
+}
+
+.header-area .main-nav .nav-link {
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .ham__menu {
+        display: block !important;
+    }
+
+    nav {
+        display: none;
+    }
 }
 
 @keyframes bounce {
@@ -6114,7 +6166,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 .about-section .elementor-widget-container .img-3 {
     position: absolute;
     top: -400px;
-    left: 450px;
+    left: 60%;
 }
 
 .about-section .banner__content .abouticon-box {
