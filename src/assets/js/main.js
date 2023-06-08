@@ -603,8 +603,7 @@ window.onload = function(){
   VanillaTilt.init(document.querySelectorAll(".card_body"), {
 		max: 15,
 		speed: 15,
-    glare:true,
-    "max-glare": 1
+    
 	});
 
 };

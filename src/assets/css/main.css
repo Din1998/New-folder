@@ -2299,7 +2299,7 @@ button:focus {
 .button {
     padding: 8px 24px;
     border: 1px solid hsl(var(--base));
-    border-radius: 28px;
+    border-radius: 2px;
     font-size: 20px;
     cursor: pointer;
     color: black;
@@ -5305,6 +5305,13 @@ select.form-control.form--control:has(option) ~ .form--label {
     z-index: 1;
 }
 
+.banner-section .animate-img-4 {
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+    width: 100px;
+}
+
 .banner-section .banner_thumb {
     position: relative;
 }
@@ -5381,7 +5388,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     }
 }
 
-.banner-left__content span.play-btn {
+.banner__content span.play-btn {
     font-size: 19px;
     font-weight: 700;
     color: hsl(var(--white));
@@ -5391,22 +5398,22 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-left__content span.play-btn {
+    .banner__content span.play-btn {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 424px) {
-    .banner-left__content span.play-btn {
+    .banner__content span.play-btn {
         font-size: 16px;
     }
 }
 
-.banner-left__content span.subtitle {
+.banner__content span.subtitle {
     font-size: 19px;
     font-weight: 700;
     color: hsl(var(--white));
-    border-radius: 7px;
+    border-radius: 28px;
     display: inline-block;
     margin-bottom: 20px;
     background: hsl(var(--base));
@@ -5414,18 +5421,18 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-left__content span.subtitle {
+    .banner__content span.subtitle {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 424px) {
-    .banner-left__content span.subtitle {
+    .banner__content span.subtitle {
         font-size: 16px;
     }
 }
 
-.banner-left__content h2 {
+.banner__content h2 {
     font-size: 60px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -5435,42 +5442,42 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 1399px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 52px !important;
     }
 }
 
 @media screen and (max-width: 1399px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 43px !important;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 43px !important;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 51px !important;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 39px !important;
     }
 }
 
 @media screen and (max-width: 424px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 28px !important;
     }
 }
 
-.banner-left__content h2 .animate-shape {
+.banner__content h2 .animate-shape {
     position: relative;
     width: 100%;
     top: 0;
@@ -5479,12 +5486,12 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-left__content h2 .animate-shape {
+    .banner__content h2 .animate-shape {
         width: 65%;
     }
 }
 
-.banner-left__content h2 .animate-shape img {
+.banner__content h2 .animate-shape img {
     position: absolute;
     top: 50px;
     left: 50%;
@@ -5495,12 +5502,12 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 767px) {
-    .banner-left__content h2 .animate-shape img {
+    .banner__content h2 .animate-shape img {
         top: 25px;
     }
 }
 
-.banner-left__content h2 span {
+.banner__content h2 span {
     color: hsl(var(--base));
     background-image: linear-gradient(to right, hsl(var(--base)) 0%, hsl(var(--dark)) 100%);
     -webkit-background-clip: text;
@@ -5508,59 +5515,171 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 @media screen and (max-width: 1399px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 60px;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 32px;
     }
 }
 
 @media screen and (max-width: 374px) {
-    .banner-left__content h2 {
+    .banner__content h2 {
         font-size: 28px;
     }
 }
 
-.banner-left__content p {
+.banner__content h2 {
+    font-size: 48px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: hsl(var(--black));
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 1399px) {
+    .banner__content h2 {
+        font-size: 52px !important;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .banner__content h2 {
+        font-size: 43px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner__content h2 {
+        font-size: 43px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner__content h2 {
+        font-size: 51px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner__content h2 {
+        font-size: 39px !important;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .banner__content h2 {
+        font-size: 28px !important;
+    }
+}
+
+.banner__content h2 .animate-shape {
+    position: relative;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .banner__content h2 .animate-shape {
+        width: 65%;
+    }
+}
+
+.banner__content h2 .animate-shape img {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    -webkit-animation: section-animation 3s infinite;
+    animation: section-animation 3s infinite;
+}
+
+@media screen and (max-width: 767px) {
+    .banner__content h2 .animate-shape img {
+        top: 25px;
+    }
+}
+
+.banner__content h2 span {
+    color: hsl(var(--base));
+    background-image: linear-gradient(to right, hsl(var(--base)) 0%, hsl(var(--dark)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1399px) {
+    .banner__content h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner__content h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner__content h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner__content h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .banner__content h2 {
+        font-size: 28px;
+    }
+}
+
+.banner__content p {
     margin-bottom: 35px;
     color: hsl(var(--black)/0.8);
 }
 
 @media screen and (max-width: 991px) {
-    .banner-left__content p {
+    .banner__content p {
         margin-bottom: 15px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .banner-left__content .btn {
+    .banner__content .btn {
         padding: 12px 15px;
     }
 }
 
 @media screen and (max-width: 374px) {
-    .banner-left__content .btn {
+    .banner__content .btn {
         padding: 8px 10px;
     }
 }
 
-.banner-left__content .banner-bottom {
+.banner__content .banner-bottom {
     margin-bottom: 15px;
 }
 
@@ -5998,6 +6117,26 @@ select.form-control.form--control:has(option) ~ .form--label {
     left: 450px;
 }
 
+.about-section .banner__content .abouticon-box {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background: hsl(var(--base)/0.5);
+    border-radius: 15px 150px 150px 150px;
+}
+
+.about-section .banner__content .abouticon-box span {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .banner__content .abouticon-box span i {
+    font-size: 40px;
+}
+
 .faq-section .faq-animate {
     position: relative;
 }
@@ -6055,6 +6194,8 @@ select.form-control.form--control:has(option) ~ .form--label {
     width: 70%;
     box-shadow: 0px 3px 20px rgba(0, 33, 71, 0.06);
     padding: 24px;
+    margin: 40px 0px 0px -150px;
+    background-color: rgb(255, 255, 255);
 }
 
 .getintouch-section .getintouch-formCard .card-heading {

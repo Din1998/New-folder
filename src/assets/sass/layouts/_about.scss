@@ -25,8 +25,26 @@
             top: -400px;
             left: 450px;
         }
-    
-       
+    }
+    .banner__content{
+        .abouticon-box{
+            width: 80px;
+            height: 80px;
+            position: relative;
+            background: hsl(var(--base)/.5);
+            border-radius: 15px 150px 150px 150px;
+            span{
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 40px;
+                    
+                }
+            }
+        }
     }
 
 }
