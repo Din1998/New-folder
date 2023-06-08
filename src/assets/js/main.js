@@ -553,12 +553,12 @@ $('.theme-btn').on('mouseenter', function (e) {
       
       newsletterPopup();
      
-      // $(document).ready(function(){
-      //   $(".counter").counterUp({
-      //     delay:7,
-      //     time:1200
-      //   })
-      // })
+      $(document).ready(function(){
+        $(".count").counterUp({
+          delay:7,
+          time:1200
+        })
+      })
 
 })(jQuery);
 

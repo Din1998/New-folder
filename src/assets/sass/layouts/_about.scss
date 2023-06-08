@@ -1,0 +1,33 @@
+.about-section{
+    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-position: center;
+    background-size: cover;
+
+
+    .elementor-widget-container{
+        position: relative;
+       
+        .about-thumb{
+            position: absolute;
+        }
+        .img-1{
+            position: absolute;
+            top: -600px;
+            
+        }
+        .img-2{
+            position: absolute;
+            bottom: 0px;
+        }
+        .img-3{
+            position: absolute;
+            top: -400px;
+            left: 450px;
+        }
+    
+       
+    }
+
+}
+
