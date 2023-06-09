@@ -6199,6 +6199,12 @@ select.form-control.form--control:has(option) ~ .form--label {
     right: 10px;
 }
 
+.expert-section {
+    background-attachment: fixed;
+    background-image: url("https://agiletechwp.wowtheme7.com/wp-content/uploads/2023/02/3-2.png");
+    background-size: cover;
+}
+
 .card_wraper {
     display: flex;
     justify-content: center;
@@ -6235,6 +6241,13 @@ select.form-control.form--control:has(option) ~ .form--label {
     justify-content: center;
     align-items: center;
     height: 400px;
+}
+
+.counter-section .counter {
+    box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
 }
 
 .getintouch-section {
@@ -6566,11 +6579,34 @@ select.form-control.form--control:has(option) ~ .form--label {
     gap: 20px;
 }
 
+.subscribe-box .subscribe-form form {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .subscribe-box .subscribe-form input {
     width: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid hsl(var(--base));
     outline: none;
+}
+
+.subscribe-box .subscribe-form .sub-btn {
+    padding: 8px 12px;
+    border: 1px solid hsl(var(--base));
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #f0dc00 !important;
+    background: linear-gradient(#0a1233 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0s;
+}
+
+.subscribe-box .subscribe-form .sub-btn:hover {
+    --p: 100%;
+    color: white;
 }
 /*# sourceMappingURL=main.css.map */
