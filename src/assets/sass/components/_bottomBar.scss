@@ -1,7 +1,11 @@
 .bottombar-section{
-  display: none;
+  position: absolute;
+  // display: none;
+
+ 
   .bottonAppBar{
     position: fixed !important;
+    height: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -13,6 +17,31 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0px  12px 0px 12px ;
+
+    .tapTo-top{
+      position: absolute;
+      background-color: rgb(179, 179, 202);
+      height: 60px;
+      width: 60px;
+      top: -40px;
+      border-radius: 50%;
+      box-shadow: 1px 5px 14px 1px rgba(0,0,0,0.24);
+      cursor: pointer;
+      .tap-box{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          i{
+            font-size: 24px;
+            color: white;
+          }
+        }
+      }
+    }
+   
   }
   .bottom-item{
     cursor: pointer;

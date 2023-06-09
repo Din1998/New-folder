@@ -3944,41 +3944,11 @@ select.form-control.form--control:has(option) ~ .form--label {
 .header-area {
     background-color: rgb(226, 226, 226);
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.header-area .header-area:hover::before {
-    opacity: 1;
-}
-
-.header-area .header-area:hover::before {
-    opacity: 1;
-}
-
-.header-area .header-area::before,
-.header-area .header-area::after {
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    transition: opacity 500ms;
-    width: 100%;
-}
-
-.header-area .header-area::before {
-    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 0.06), transparent 90%);
-    z-index: 3;
-}
-
-.header-area .header-area::after {
-    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 0.4), transparent 90%);
-    z-index: 1;
 }
 
 .header-area .main-nav {
@@ -5330,11 +5300,12 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .bottombar-section {
-    display: none;
+    position: absolute;
 }
 
 .bottombar-section .bottonAppBar {
     position: fixed !important;
+    height: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -5346,6 +5317,30 @@ select.form-control.form--control:has(option) ~ .form--label {
     align-items: center;
     flex-wrap: wrap;
     padding: 0px 12px 0px 12px;
+}
+
+.bottombar-section .bottonAppBar .tapTo-top {
+    position: absolute;
+    background-color: rgb(179, 179, 202);
+    height: 60px;
+    width: 60px;
+    top: -40px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 14px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.bottombar-section .bottonAppBar .tapTo-top .tap-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottombar-section .bottonAppBar .tapTo-top .tap-box span i {
+    font-size: 24px;
+    color: white;
 }
 
 .bottombar-section .bottom-item {
@@ -6277,11 +6272,16 @@ select.form-control.form--control:has(option) ~ .form--label {
     height: 400px;
 }
 
-.counter-section .counter {
+.counter-section .counter-box {
     box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
+    padding: 20px;
+}
+
+.counter-section .counter-box .counter-icon i {
+    font-size: 32px;
 }
 
 .getintouch-section {

@@ -1,48 +1,13 @@
 .header-area{
    background-color: rgb(226, 226, 226) ;
    position: fixed;
+   top: 0;
    left: 0;
    right: 0;
    z-index: 999;
    box-shadow: 0 5px 5px rgba(0,0,0,.2);
-   .header-area:hover::before {
-    opacity: 1;
-  }
+   
   
-  .header-area:hover::before {
-    opacity: 1;
-  }
-  
-  .header-area::before,
-  .header-area::after {
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    transition: opacity 500ms;
-    width: 100%;
-  }
-  
-  .header-area::before {
-    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(0, 0, 0, 0.06),
-      transparent 90%
-    );
-    z-index: 3;
-  }
-  
-  .header-area::after {  
-    background: radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(0, 0, 0, 0.4),
-      transparent 90%
-    );
-    z-index: 1;
-  }
   .main-nav{
     display: flex;
     justify-content: space-around;
