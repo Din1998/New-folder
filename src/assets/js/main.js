@@ -608,5 +608,13 @@ window.onload = function(){
 
 };
 
+// sticky navmenu
+
+window.addEventListener("scroll",function(){
+  var topNav = document.querySelector(".header-area");
+  topNav.classList.toggle("header-sticky", window.scrollY > 280);
+});
+
+
 
 

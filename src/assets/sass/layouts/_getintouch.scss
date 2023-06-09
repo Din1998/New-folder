@@ -14,3 +14,35 @@
 
 }
 
+@media only screen and (max-width: 937px) {
+    .getintouch-section{
+        margin-top: 0px;
+        .formCard-wraper{
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .getintouch-formCard{
+                margin: 0;
+            }
+        }
+       
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .getintouch-section{
+        margin-top: 0px;
+        .formCard-wraper{
+            width: 100% !important;
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            .getintouch-formCard{
+                width: 100% !important;
+            }
+        }
+       
+    }
+}
