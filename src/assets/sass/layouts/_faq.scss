@@ -8,5 +8,17 @@
             top: -180px;
             right: 10px;
         }
+
+    }
+    .accordion-button:not(.collapsed) {
+        color:hsl(var(--base)) !important;
+        background-color: transparent !important;
+        box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 ;
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: hsl(var(--base));
+        outline: 0;
+        box-shadow: hsl(var(--base));
     }
 }

@@ -3943,13 +3943,13 @@ select.form-control.form--control:has(option) ~ .form--label {
     left: 0;
     right: 0;
     z-index: 999;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.03);
 }
 
 .header-area .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0px 24px 0px;
+    padding: 24px 20px 24px 20px;
     transition: 0.6s;
 }
 
@@ -3963,6 +3963,14 @@ select.form-control.form--control:has(option) ~ .form--label {
     display: none;
 }
 
+.header-area .main-nav .logo {
+    background-color: hsl(var(--base));
+}
+
+.header-area .main-nav .logo img {
+    width: 140px;
+}
+
 .header-area .main-nav .nav-link {
     display: flex;
     gap: 20px;
@@ -3970,16 +3978,18 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-area .main-nav .nav-link li a {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .header-sticky {
     background: hsl(var(--base));
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .ham__menu {
-        display: block !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
     }
 
     nav {
@@ -5311,7 +5321,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .bottombar-section .bottonAppBar {
     position: fixed !important;
-    height: 60px;
+    height: 80px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -5328,8 +5338,8 @@ select.form-control.form--control:has(option) ~ .form--label {
 .bottombar-section .bottonAppBar .tapTo-top {
     position: absolute;
     background-color: rgb(179, 179, 202);
-    height: 50px;
-    width: 50px;
+    height: 46px;
+    width: 46px;
     top: -34px;
     border-radius: 50%;
     box-shadow: 1px 5px 14px 1px rgba(0, 0, 0, 0.24);
@@ -5345,7 +5355,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .bottombar-section .bottonAppBar .tapTo-top .tap-box span i {
-    font-size: 24px;
+    font-size: 20px;
     color: white;
 }
 
@@ -5357,6 +5367,10 @@ select.form-control.form--control:has(option) ~ .form--label {
     align-items: center;
 }
 
+.bottombar-section .bottom-item span i {
+    font-size: 24px;
+}
+
 @media only screen and (max-width: 1026px) {
     .bottombar-section {
         display: block !important;
@@ -5366,7 +5380,9 @@ select.form-control.form--control:has(option) ~ .form--label {
 .banner-section {
     position: relative;
     z-index: 1;
-    padding: 200px 0 120px;
+    padding: 220px 0 120px;
+    background: url("https://agiletechwp.wowtheme7.com/wp-content/uploads/2023/02/0.png");
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -5497,14 +5513,15 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .banner__content span.subtitle {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 700;
     color: hsl(var(--white));
     border-radius: 28px;
     display: inline-block;
     margin-bottom: 20px;
     background: hsl(var(--base));
-    padding: 5px 20px;
+    padding: 8px 20px;
+    line-height: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -6157,7 +6174,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     height: 380px;
     width: 100%;
     position: relative;
-    box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -6171,6 +6188,10 @@ select.form-control.form--control:has(option) ~ .form--label {
 .service-section .card_wraper .card-img img {
     width: 100px;
     padding: 12px 0px 12px 0px;
+}
+
+.service-section .card_wraper .content h2 {
+    font-size: 28px;
 }
 
 .about-section {
@@ -6234,6 +6255,19 @@ select.form-control.form--control:has(option) ~ .form--label {
     right: 10px;
 }
 
+.faq-section .accordion-button:not(.collapsed) {
+    color: hsl(var(--base)) !important;
+    background-color: transparent !important;
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0;
+}
+
+.faq-section .accordion-button:focus {
+    z-index: 3;
+    border-color: hsl(var(--base));
+    outline: 0;
+    box-shadow: hsl(var(--base));
+}
+
 .expert-section {
     background-attachment: fixed;
     background-image: url("https://agiletechwp.wowtheme7.com/wp-content/uploads/2023/02/3-2.png");
@@ -6251,7 +6285,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     height: auto;
     width: 100%;
     position: relative;
-    box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -6267,6 +6301,78 @@ select.form-control.form--control:has(option) ~ .form--label {
     padding: 12px 0px 12px 0px;
 }
 
+/*====================== Breadcumb Css Start ====================*/
+.breadcumb {
+    position: relative;
+    z-index: 1;
+    padding: 200px 0 70px;
+    z-index: 1;
+    background: hsl(var(--base)/0.1);
+    z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .breadcumb {
+        padding: 100px 0 50px;
+    }
+}
+
+.breadcumb .banner-effect-1 {
+    content: "";
+    position: absolute;
+    top: 67%;
+    left: 0%;
+    width: 151px;
+    height: 173px;
+    background-color: hsl(var(--base)/0.9);
+    opacity: 0.8;
+    filter: blur(93px);
+    border-radius: 1% 50% 50% 0%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.breadcumb__wrapper {
+    text-align: left;
+}
+
+.breadcumb__title {
+    color: hsl(var(--black));
+    font-weight: 700;
+}
+
+.breadcumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.breadcumb__item {
+    color: hsl(var(--black));
+    padding: 0 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 575px) {
+    .breadcumb__item {
+        font-size: 15px;
+    }
+}
+
+.breadcumb__item-text {
+    color: hsl(var(--black));
+}
+
+.breadcumb__link {
+    color: hsl(var(--black));
+    font-weight: 500;
+}
+
+.breadcumb__link:hover {
+    color: hsl(var(--base));
+}
+
 .counter-section {
     background: hsl(var(--base)/0.2);
     background-position: center center;
@@ -6275,36 +6381,49 @@ select.form-control.form--control:has(option) ~ .form--label {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 100%;
 }
 
 .counter-section .counter-box {
-    box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 20px;
 }
 
+.counter-section .counter-box h1 {
+    margin: 0;
+}
+
 .counter-section .counter-box .counter-icon i {
-    font-size: 32px;
+    font-size: 48px;
+    margin-bottom: 8px;
 }
 
 .getintouch-section {
-    margin-top: -150px;
+    margin-top: -100px;
 }
 
 .getintouch-section .getintouch-formCard {
     border-radius: 24px;
-    width: 70%;
-    box-shadow: 0px 3px 20px rgba(0, 33, 71, 0.06);
-    padding: 24px;
+    width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 36px;
     margin: 40px 0px 0px -150px;
     background-color: rgb(255, 255, 255);
 }
 
 .getintouch-section .getintouch-formCard .card-heading {
     text-align: left;
+}
+
+.getintouch-section .getintouch-formCard .card-heading h2 {
+    font-size: 28px;
+}
+
+.getintouch-section .getintouch-formCard .form-control {
+    height: 60px;
 }
 
 @media only screen and (max-width: 937px) {
@@ -6370,7 +6489,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     height: auto;
     width: 100%;
     position: relative;
-    box-shadow: 20px 20px 50px rgba(202, 202, 202, 0.5);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -6403,6 +6522,40 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .news-section .card_wraper .nws-card_body .nws-footer .nws-author p {
     padding: 0px 0px 0px 8px;
+}
+
+.map-section .contact-infowraper .info-box {
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.map-section .contact-infowraper .info-box .info-icon {
+    padding: 20px;
+}
+
+.map-section .contact-infowraper .info-box .info-icon i {
+    font-size: 42px;
+}
+
+.map-section .map-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.map-section .map-box iframe {
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: -86px;
 }
 
 /*============= Footer Start Here =======================*/
@@ -6458,6 +6611,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     max-width: 160px;
     max-height: 64px;
     filter: brightness(1);
+    background-color: hsl(var(--base));
 }
 
 .footer-item__title {
@@ -6478,6 +6632,8 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .footer-item .social-list {
+    display: flex;
+    gap: 24px;
     margin-top: 30px;
 }
 
@@ -6496,6 +6652,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 .footer-item .social-list__item .social-list__link {
     border: 1px solid hsl(var(--base)/0.2);
     color: hsl(var(--dark));
+    font-size: 24px;
 }
 
 .footer-menu {

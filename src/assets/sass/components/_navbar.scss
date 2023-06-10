@@ -4,12 +4,12 @@
    left: 0;
    right: 0;
    z-index: 999;
-   box-shadow: 0 5px 5px rgba(0,0,0,.2);
+   box-shadow: 0 5px 5px rgba(0,0,0,.03);
 
   .main-nav{
     display: flex;
     justify-content: space-between;
-    padding: 24px 0px 24px 0px;
+    padding: 24px 20px 24px 20px;
     transition: 0.6s;
     .logo-box{
       display: flex;
@@ -18,9 +18,13 @@
     }
     .ham__menu{
       display: none;
+     
     }
     .logo{
-        
+        background-color: hsl(var(--base));
+      img{
+        width: 140px;
+      }
     }
     .nav-link{
       
@@ -30,7 +34,7 @@
       li{
         a{
           font-size: 20px;
-          font-weight: 800;
+          font-weight: 600;
         }
       }
     
@@ -42,9 +46,11 @@
   background: hsl(var(--base));
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .ham__menu {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
   }
   nav{
     display: none;

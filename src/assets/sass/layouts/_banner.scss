@@ -2,8 +2,9 @@
 .banner-section {
   position: relative;
   z-index: 1;
-  padding: 200px 0 120px;
-  // background: hsl(var(--base)/.1);
+  padding: 220px 0 120px;
+  background: url("https://agiletechwp.wowtheme7.com/wp-content/uploads/2023/02/0.png");
+  background-size: cover; 
   overflow: hidden;
   .animate-img-1{
     position: absolute;
@@ -110,14 +111,15 @@
          }
       }
       span.subtitle {
-          font-size: 19px;
+          font-size: 16px;
           font-weight: 700;
           color: hsl(var(--white));
           border-radius: 28px;
           display: inline-block;
           margin-bottom: 20px;
           background: hsl(var(--base));
-          padding: 5px 20px;
+          padding: 8px 20px;
+          line-height: 1;
           @include sm-screen {
               font-size: 18px;
          }
