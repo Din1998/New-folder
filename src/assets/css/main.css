@@ -6505,7 +6505,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .news-section .card_wraper .nws-card_body .nws-footer {
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(189, 189, 189);
     width: 100%;
 }
 
